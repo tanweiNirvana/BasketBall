@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BasketBall</string>
+    <string name="score_basketball">篮球计分器</string>
+    <string name="tv_team_A">A队</string>
+    <string name="tv_team_B">B队</string>
+    <string name="tv_penalty_shot">罚球</string>
+    <string name="tv_goal">进球</string>
+    <string name="tv_Three_point_ball">三分球</string>
+    <string name="tv_reset">重置</string>
+</resources>

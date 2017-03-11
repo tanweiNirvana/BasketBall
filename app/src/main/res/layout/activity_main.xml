@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a46146.basketball.MainActivity">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/basketball2" />
+
+    <TextView
+        android:id="@+id/score_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photo"
+        android:gravity="center_horizontal"
+        android:text="@string/score_basketball"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/score_indicator"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/CustomLinearLayoutStyle">
+
+
+            <TextView
+                android:id="@+id/A_team"
+                style="@style/CustomTextViewStyle"
+                android:text="@string/tv_team_A"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/A_score"
+                style="@style/CustomTextViewStyle"
+                android:text="0"
+                android:textSize="@dimen/score_size" />
+
+            <Button
+                android:id="@+id/A_penalty_shot"
+                style="@style/CustomButtonStyle"
+                android:text="@string/tv_penalty_shot" />
+
+            <Button
+                android:id="@+id/A_Goal"
+                style="@style/CustomButtonStyle"
+                android:text="@string/tv_goal" />
+
+            <Button
+                android:id="@+id/A_Three_point_ball"
+                style="@style/CustomButtonStyle"
+                android:text="@string/tv_Three_point_ball" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/CustomLinearLayoutStyle">
+
+            <TextView
+                android:id="@+id/B_team"
+                style="@style/CustomTextViewStyle"
+                android:text="@string/tv_team_B"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/B_score"
+                style="@style/CustomTextViewStyle"
+                android:text="0"
+                android:textSize="@dimen/score_size" />
+
+            <Button
+                android:id="@+id/B_penalty_shot"
+                style="@style/CustomButtonStyle"
+                android:text="@string/tv_penalty_shot" />
+
+            <Button
+                android:id="@+id/B_Goal"
+                style="@style/CustomButtonStyle"
+                android:text="@string/tv_goal" />
+
+            <Button
+                android:id="@+id/B_Three_point_ball"
+                style="@style/CustomButtonStyle"
+                android:text="@string/tv_Three_point_ball" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/tv_reset" />
+</RelativeLayout>
